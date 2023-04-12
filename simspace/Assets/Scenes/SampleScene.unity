@@ -3903,6 +3903,37 @@ Texture2D:
     offset: 0
     size: 0
     path: 
+--- !u!1 &319108630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 319108631}
+  m_Layer: 0
+  m_Name: waypoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &319108631
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319108630}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.452, y: -0.818, z: -5.22}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 70
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!28 &320389286
 Texture2D:
   m_ObjectHideFlags: 0
@@ -5706,6 +5737,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bfca64f0cf4ef248b199077f3f98357, type: 3}
+--- !u!1 &499996639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 499996640}
+  m_Layer: 0
+  m_Name: waypoint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &499996640
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499996639}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.378, y: -0.818, z: -1.271}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 71
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!28 &513019750
 Texture2D:
   m_ObjectHideFlags: 0
@@ -6684,16 +6746,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSleep: 11
   currentSleep: 0
-  sleepDecreaseRate: 1
-  sleepBar: {fileID: 0}
+  sleepDecreaseRate: 0.5
+  sleepBar: {fileID: 600031676}
+  sleepBarParts:
+  - {fileID: 1201020456}
+  - {fileID: 693741348}
+  - {fileID: 1540398907}
+  - {fileID: 1300575898}
+  - {fileID: 239865268}
+  - {fileID: 653955131}
+  - {fileID: 1364783988}
+  - {fileID: 583809221}
+  - {fileID: 685776853}
+  - {fileID: 1832082654}
+  - {fileID: 1520777298}
+  - {fileID: 1015469082}
   maxFeed: 11
   currentFeed: 0
-  feedDecreaseRate: 1
-  feedBar: {fileID: 0}
+  feedDecreaseRate: 0.3
+  feedBar: {fileID: 1060382326}
+  feedBarParts:
+  - {fileID: 2013442295}
+  - {fileID: 421914455}
+  - {fileID: 800091543}
+  - {fileID: 1920381179}
+  - {fileID: 1356210712}
+  - {fileID: 155708556}
+  - {fileID: 970758380}
+  - {fileID: 160785137}
+  - {fileID: 1429311269}
+  - {fileID: 1781219333}
+  - {fileID: 1898461735}
+  - {fileID: 1707554807}
   maxEntertainment: 11
   currentEntertainment: 0
-  entertaimentDecreaseRate: 1
-  entertainmentBar: {fileID: 0}
+  entertaimentDecreaseRate: 0.7
+  entertainmentBar: {fileID: 1352525588}
+  entertainmentBarParts:
+  - {fileID: 953282056}
+  - {fileID: 1915920120}
+  - {fileID: 2817480}
+  - {fileID: 2124789333}
+  - {fileID: 2027315171}
+  - {fileID: 1294465454}
+  - {fileID: 718968182}
+  - {fileID: 1680624445}
+  - {fileID: 1444702996}
+  - {fileID: 1216738290}
+  - {fileID: 636316322}
+  - {fileID: 331626692}
 --- !u!195 &598223353
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13424,7 +13525,7 @@ Canvas:
   m_GameObject: {fileID: 1195082879}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -17433,8 +17534,43 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 19904334, guid: 3517d6179b17d7d41b2ab3881cb2cd67, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3517d6179b17d7d41b2ab3881cb2cd67, type: 3}
+--- !u!1 &1503208196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1503208197}
+  m_Layer: 0
+  m_Name: waypoint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1503208197
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503208196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.387, y: -0.903, z: -9.871}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 72
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!28 &1506567163
 Texture2D:
   m_ObjectHideFlags: 0
